@@ -14,3 +14,51 @@ body {
     font-size: 1.6rem;
 }
 
+#page {
+    height: 100vh; /*deixar do tamanho da tela do seu monitor padrão*/
+}
+
+.flex {
+    display: flex; /*classe utilitaria flex e posso utilizar onde eu quiser*/
+}
+
+#page > * {
+    width: 50%; /* pegando o id page e pegando o primeiro nivel de filhos que são os 2 inputs e a img e coloquei uma  largura de 50%*/
+}
+
+img {
+    width: 100%;
+    object-fit: cover;/* cobrir tudo na pagina com a img sem perder qualidade*/
+}
+
+header img {
+    height: 5.4rem;
+    width: 16rem;
+}
+
+#page > div {
+    padding: 4rem 11.2rem;
+}
+
+main {
+    margin-top: 11.4rem;
+}
+
+.headline {
+    max-width: 35rem;
+}
+
+form {
+    margin-top: 4rem;
+}
+
+form button {
+    all: unset; /*tira todas as propriedades dos botoes*/
+}
+
+form button:active,
+form button:hover,
+form button:focus {
+    outline: 2px solid black;
+    border-radius: 0.2rem;
+}

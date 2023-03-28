@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="page">
-        <header>
-            logo
-        </header>
-        <main>
-            <div class="headline">
-                <h1>Acesse a plataforma</h1>
-                <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
-            </div>
-            <form>
-                <div class="input-wrapper">
-                    <label for="email">E-mail</label>
-                    <input id="email" type="email" name="email" required>
+    <div id="page" class="flex">
+        <div>
+            <header>
+                <img src="./assets/img/logo.svg" alt="">
+            </header>
+            <main>
+                <div class="headline">
+                    <h1>Acesse a plataforma</h1>
+                    <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
                 </div>
-                <div class="input-wrapper">
-                    <div class="label-wrapper">
-                    <label for="">Senha</label>
-                    <a href="#"> Esqueceu a senha? </a>
+                <form>
+    
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" required>
                     </div>
-                    <input type="password" id="senha">
-                    <img class="show-password" src="" alt="">
-                    <img class="hide-password" src="" alt="">
-                </div>
-
-                <button type="submit">Entrar</button>
-
-                <div class="create-account">
-                    Ainda não tem conta? 
-                    <a href="#">inscreva-se</a>
-                </div>
-            </form>
-        </main>
+    
+                    <div class="input-wrapper">
+    
+                        <div class="label-wrapper">
+                            <label for="">Senha</label>
+                            <a href="#"> Esqueceu a senha? </a>
+                        </div>
+    
+                        <input type="password" id="senha">
+                        <img class="show-password" src="" alt="">
+                        <img class="hide-password" src="" alt="">
+    
+                    </div>
+    
+                    <button type="submit">Entrar</button>
+    
+                    <div class="create-account">
+                            Ainda não tem conta?
+                        <a href="#">inscreva-se</a>
+                    </div>
+    
+                </form>
+            </main>
+        </div>
+        <img src="./assets/img/bg.jpg" alt="">
     </div>
 </body>
+
 </html>
