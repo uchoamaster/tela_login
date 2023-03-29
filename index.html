@@ -56,10 +56,12 @@
         // quando eu mexer em um olho essa função será executada
         function togglePassword() {
             document
-            .querySelectorAll(".eye")
-            .forEach(function(eye) {
-                eye.classList.toggle("hide")
-             })
+                .querySelectorAll(".eye")
+                .forEach((eye) => eye.classList.toggle("hide"))
+
+                    const type = senha.getAttribute("type") == "password" ? "text" : "password"
+                                 senha.setAttribute("type", type)
+                // })
         }
 
     </script>
