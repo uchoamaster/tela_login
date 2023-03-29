@@ -14,6 +14,16 @@ body {
     font-size: 1.6rem;
 }
 
+button {
+    all: unset;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
 #page {
     height: 100vh; /*deixar do tamanho da tela do seu monitor padrão*/
 }
@@ -61,6 +71,10 @@ form input {
      margin-top: 0.8rem;
 }
 
+.input-wrapper {
+    position: relative;
+}
+
 form .input-wrapper + .input-wrapper { /*vai pegar um input wrapper que anterior a ele tem um outro input wrapper*/
     margin-top: 1.6rem;
 }
@@ -69,8 +83,24 @@ form .input-wrapper + .input-wrapper { /*vai pegar um input wrapper que anterior
     justify-content: space-between;
 }
 
+::-ms-reveal {
+    display: none; /*para retirar o olhinho do ms edge*/
+}
+
+.eye {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 52%;
+    right: 5%;
+}
+
+.hide {
+    display: none;
+}
+
 form button {
-    all: unset; /*tira todas as propriedades dos botoes*/
+   
     display: flex;
     justify-content: center;
     align-items: center;

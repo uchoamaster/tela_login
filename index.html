@@ -35,8 +35,8 @@
                         </div>
     
                         <input type="password" id="senha">
-                        <img class="show-password" src="./assets/img/eye-off.svg" alt="">
-                        <img class="hide-password" src="./assets/img/eye.svg" alt="">
+                        <img onclick="togglePassword()" class="eye" src="./assets/img/eye-off.svg" alt="">
+                        <img onclick="togglePassword()" class="eye hide" src="./assets/img/eye.svg" alt="">
     
                     </div>
     
@@ -52,6 +52,18 @@
         </div>
         <img src="./assets/img/bg.jpg" alt="">
     </div>
+    <script>
+        // quando eu mexer em um olho essa função será executada
+        function togglePassword() {
+            document
+            .querySelectorAll(".eye")
+            .forEach(function(eye) {
+                eye.classList.toggle("hide")
+             })
+        }
+
+    </script>
 </body>
 
 </html>
+
