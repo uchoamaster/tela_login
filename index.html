@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +27,12 @@
     
                     <div class="input-wrapper">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" required>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="sobrenome">Sobrenome (campo desabilitado)</label>
+                        <input id="sobrenome" type="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" disabled>
                     </div>
     
                     <div class="input-wrapper">
@@ -33,8 +41,8 @@
                             <label for="">Senha</label>
                             <a href="#"> Esqueceu a senha? </a>
                         </div>
-    
-                        <input type="password" id="senha">
+                        <input type="password" id="senha" placeholder="Digite sua senha">
+
                         <img onclick="togglePassword()" class="eye" src="./assets/img/eye-off.svg" alt="">
                         <img onclick="togglePassword()" class="eye hide" src="./assets/img/eye.svg" alt="">
     
